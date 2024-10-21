@@ -27,5 +27,3 @@ This PowerShell script automates the process of downloading the PSTools utility,
 
 ## To re-enable
 - Go to Task Scheduler, find "SPPSVC Suspend", right click and enable. Reboot.
-
-> Because the script is scheduled to run within 15 min sppsvc will run to do his tasks then will be suspended.

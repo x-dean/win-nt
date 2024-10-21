@@ -60,7 +60,7 @@ if (-Not (Test-Path $destinationPath)) {
 $taskName = "SPPSVC Suspend"
 
 $action = New-ScheduledTaskAction -Execute "C:\Windows\System32\pssuspend64.exe" -Argument "sppsvc"
-$trigger = New-ScheduledTaskTrigger -AtLogOn -RandomDelay 15
+$trigger = New-ScheduledTaskTrigger -AtLogOn
 
 $currentUser = [Security.Principal.WindowsIdentity]::GetCurrent().Name
 
